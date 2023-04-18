@@ -1,0 +1,8 @@
+.parent-container{
+    display: flex;
+    align-items: center;
+    .example-card {
+        max-width: auto;
+        margin: 14px;
+      }
+}
