@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit {
     this.weatherApiService.getCurrentWeather().subscribe(
       (response) => {
         this.weatherCardInfo = response;
-        console.log('response is:',response)
       },
       (error) => {
         console.log('error is:',error);

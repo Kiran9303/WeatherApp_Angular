@@ -1,8 +1,8 @@
 <div class="parent-container">
     <mat-card class="weather-card">
         <mat-card-header class="weather-card-header">
-        <mat-card-title class="weather-card-title">Location: {{weatherCardInfo.location.name}}</mat-card-title>
-        <mat-card-subtitle class="weather-card-location">Region: {{weatherCardInfo.location.region}}, Country: {{weatherCardInfo.location.country}}</mat-card-subtitle>
+        <mat-card-title class="weather-card-title">Location: {{weatherCardInfo?.location?.name}}</mat-card-title>
+        <mat-card-subtitle class="weather-card-location">Region: {{weatherCardInfo?.location?.region}}, Country: {{weatherCardInfo.location?.country}}</mat-card-subtitle>
         </mat-card-header>
 
         <mat-card-content>
@@ -10,7 +10,6 @@
         <p>current temperature: {{weatherCardInfo?.current?.temp_c}} C</p>
         <p>feels like: {{weatherCardInfo?.current?.feelslike_c}} C</p>
 
-        <p> weatherCardInfo: {{weatherCardInfo.location.name}}</p>
         </mat-card-content>
         <!-- <mat-card-actions>
         <button mat-button>LIKE</button>
