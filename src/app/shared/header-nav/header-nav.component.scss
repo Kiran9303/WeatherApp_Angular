@@ -1,0 +1,42 @@
+@import '../../../styles.scss';
+@import '../../../variables.scss';
+
+.logo-attributes{
+    width: 120px;
+    height: 45px;
+    @mixin for-mobiles {
+        width: 80px;
+        height: 25px;
+    }
+}
+.weather-icon-row {
+    display: flex;
+    justify-content: space-between;
+    .weather-icon{
+        @extend .logo-attributes;
+        background: url('../../../assets/weatherBud.svg') no-repeat; 
+    }
+    .login-button{
+        font-size: 15px;
+        font-weight: bold;
+        width: 80px;
+        border-radius: 6px;
+        background-color: antiquewhite;
+    }
+    .login-button:hover{
+        background-color: $menu-button-color ;
+    }
+}
+
+
+mat-grid-list{
+    display: flex;
+    .menu-list-item{
+        max-width: 130px;
+        border-radius: 16px;
+    }
+    .menu-list-item:hover{
+        background-color: $menu-button-color ;
+    }
+
+}

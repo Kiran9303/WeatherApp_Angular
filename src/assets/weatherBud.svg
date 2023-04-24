@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="111.177 149.822 93.936 41.023" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <text style="fill: rgb(0, 31, 123); font-family: Arial, sans-serif; font-size: 16.6px; white-space: pre;" x="112.366" y="181.926">weather</text>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 16.6px;" x="186.683" y="173.008"> </text>
+  <text style="fill: rgb(228, 126, 10); font-family: Arial, sans-serif; font-size: 16.6px; white-space: pre;" x="173.009" y="181.926">Bud</text>
+  <path d="M 177.765 152.794 L 184.305 168.252 L 171.225 168.252 L 177.765 152.794 Z" style="stroke: rgb(0, 0, 0); fill: rgb(19, 4, 4);" bx:shape="triangle 171.225 152.794 13.08 15.458 0.5 0 1@9140b16b"/>
+</svg>

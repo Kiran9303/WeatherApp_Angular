@@ -1,0 +1,10 @@
+<div>
+    <div class="weather-icon-row">
+        <span class="weather-icon"></span>
+        <button class="menu-list-item login-button" >Login</button>
+    </div>
+    <mat-grid-list class="menu-nav" cols="12" rowHeight="45px">
+        <mat-grid-tile *ngFor="let item of menuItems" class="menu-list-item" (click)="getWeather(item.buttonVal)">{{item.buttonName}}</mat-grid-tile>
+    </mat-grid-list>
+</div>
+

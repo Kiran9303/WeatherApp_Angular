@@ -1,0 +1,21 @@
+.parent-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    .weather-card {
+        max-width: auto;
+        min-width: 350px;
+        margin: 14px;
+        .weather-card-header{
+            justify-content: center;
+            .weather-card-title{
+                display: flex;
+                justify-content: center;
+            }
+            .weather-card-location{
+                
+            }
+        }
+      }
+}

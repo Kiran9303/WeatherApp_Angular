@@ -1,0 +1,17 @@
+@import '/src/variables.scss';
+
+@mixin for-mobiles {
+    @media (max-width: $max-mobile-size){
+        @content;
+    }
+}
+@mixin for-tablets {
+    @media (min-width: $min-tablet-size) and (max-width: $max-tablet-size){
+        @content;
+    }
+}
+@mixin for-desktops-others {
+    @media (min-width: $min-desktop-size){
+        @content;
+    }
+}
