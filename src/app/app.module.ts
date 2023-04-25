@@ -13,7 +13,7 @@ import { ErrorComponent } from './app-routing/error/error.component';
 import { HeaderNavComponent } from './shared/header-nav/header-nav.component';
 import { FooterNavComponent } from './shared/footer-nav/footer-nav.component';
 import { WeatherApiService } from './services/weatherApi.service';
-import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { WeatherCardComponent } from './weather-components/weather-card/weather-card.component';
 
 @NgModule({

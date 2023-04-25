@@ -8,12 +8,9 @@ import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 })
 
 
-export class WeatherCardComponent implements OnInit {
+export class WeatherCardComponent {
 
-  @Input() weatherCardInfo: any;
+  @Input() weatherCardInfo?: any;
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

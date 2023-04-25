@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   constructor(private weatherApiService: WeatherApiService) { }
 
   ngOnInit(): void {
-    this.weatherApiService.getCurrentWeather().subscribe(
+    this.weatherApiService.getCurrentWeather('ottawa', 'application/json').subscribe(
       (response) => {
         this.weatherCardInfo = response;
       },
