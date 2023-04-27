@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
-import { WeatherApiService } from 'src/app/services/weatherApi.service';
+import { WeatherBudService } from 'src/app/services/weatherApi.service';
 import { HttpClient, HttpHandler } from '@angular/common/http';
 
 describe('LoginComponent', () => {
@@ -11,7 +11,7 @@ describe('LoginComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ HomeComponent ],
-      providers: [HttpClient ,WeatherApiService, HttpHandler]
+      providers: [HttpClient ,WeatherBudService, HttpHandler]
     })
     .compileComponents();
   });

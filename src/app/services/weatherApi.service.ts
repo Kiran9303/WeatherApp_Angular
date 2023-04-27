@@ -6,14 +6,14 @@ import { getHttpParams } from "../core/utils/apiUtils";
 
 const weatherObj = {};
 @Injectable({providedIn: 'root'})
-export class WeatherApiService {
+export class WeatherBudService {
 
     constructor(private httpClient: HttpClient){
 
     }
-   getCurrentWeather(currentLocation: String, responseType: String): Observable<any> {
+   getCurrentWeather(payload: any): Observable<any> {
         const tempUrl = API_URL+'/current';
-        const params = getHttpParams({location: currentLocation, responseType: responseType});
+        const params = getHttpParams({location: payload.currentLocation, responseType: payload.responseType});
         return this.httpClient.get(tempUrl, {params: params} );        
     }
 }

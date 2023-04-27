@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WeatherApiService } from '../../services/weatherApi.service';
+import { WeatherBudService } from '../../services/weatherApi.service';
 
 @Component({
   selector: 'weatherBud-home',
@@ -9,7 +9,7 @@ import { WeatherApiService } from '../../services/weatherApi.service';
 export class HomeComponent implements OnInit {
   weatherCardInfo: any;
 
-  constructor(private weatherApiService: WeatherApiService) { }
+  constructor(private weatherApiService: WeatherBudService) { }
 
   ngOnInit(): void {
     this.weatherApiService.getCurrentWeather('ottawa', 'application/json').subscribe(

@@ -12,9 +12,12 @@ import { HomeComponent } from './app-routing/home/home.component';
 import { ErrorComponent } from './app-routing/error/error.component';
 import { HeaderNavComponent } from './shared/header-nav/header-nav.component';
 import { FooterNavComponent } from './shared/footer-nav/footer-nav.component';
-import { WeatherApiService } from './services/weatherApi.service';
+import { WeatherBudService } from './services/weatherApi.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { WeatherCardComponent } from './weather-components/weather-card/weather-card.component';
+import { StoreModule } from '@ngrx/store';
+import { WeatherBudEffects } from './store/weatherBud/weatherBud.effects';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ import { WeatherCardComponent } from './weather-components/weather-card/weather-
     BrowserAnimationsModule,
     CommonMaterialModuleModule,
     CoreModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot({}, {}),
+    EffectsModule.forFeature ([WeatherBudEffects]),
   ],
   providers: [ HttpClient ],
   bootstrap: [AppComponent]
