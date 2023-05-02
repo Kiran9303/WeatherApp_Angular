@@ -18,6 +18,7 @@ import { WeatherCardComponent } from './weather-components/weather-card/weather-
 import { StoreModule } from '@ngrx/store';
 import { WeatherBudEffects } from './store/weatherBud/weatherBud.effects';
 import { EffectsModule } from '@ngrx/effects';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { EffectsModule } from '@ngrx/effects';
     CoreModule,
     AppRoutingModule,
     StoreModule.forRoot({}, {}),
-    EffectsModule.forFeature ([WeatherBudEffects]),
+    EffectsModule.forRoot([WeatherBudEffects]),
+    StoreDevtoolsModule
   ],
   providers: [ HttpClient ],
   bootstrap: [AppComponent]
